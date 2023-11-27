@@ -1,0 +1,84 @@
+@import "../../style.scss";
+
+.create{
+ @include themify($themes){ 
+    background-color:themed("bg") ;
+
+.container{
+   max-width: 90%;
+    padding: 30px;
+
+    .top{
+        display: flex;
+        .add{
+            color: themed("logo1");
+        }
+        h1{
+            padding-left: 10px;
+            color: themed("textColor");
+        }
+    }
+    .caption{
+        margin-top: 40px;
+        h2{
+            padding-bottom: 8px;
+            color: themed("textColor");
+        }
+        .area{
+            resize: none;
+            height: 80px;
+            min-width: 100%;
+            padding-left: 10px;
+            padding-top: 6px;
+            border-radius: 15px;
+            background-color:themed("input");
+            border: none;
+            outline: none;
+            
+            
+        }
+    }
+    .photos{
+        padding-top: 40px;
+        .pics{
+            height: 180px;
+           width: 100%;
+           border-radius: 15px;
+           background-color: themed("input");
+           border: none;
+           }
+        h2{
+            padding-bottom: 8px;
+            color: themed("textColor");
+        }
+        input{
+           
+        }
+    }
+    .btns{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-top: 20px;
+
+
+        button{
+               padding: 15px;
+               border-radius: 15px;
+               border: none;
+               cursor: pointer;
+
+               &:first-child{
+                  background-color: lightgray;
+               }
+
+               &:last-child{
+                margin-left: 20px;
+                background-color: #000;
+                color: white;
+               }
+        }
+    }
+}
+}
+}

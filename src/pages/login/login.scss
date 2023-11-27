@@ -1,0 +1,151 @@
+@import "../../style.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+height: 100vh;
+background-color: rgb(193, 190, 255);
+display: flex;
+align-items: center;
+justify-content: center;
+@include mobile{
+       background:linear-gradient(rgba(39, 11, 96, 0.5),rgba(39, 11,96, 0.5)), url(https://images.pexels.com/photos/4288671/pexels-photo-4288671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center;
+        background-size: cover;
+}
+@include max-mini{
+    //    background:linear-gradient(rgba(39, 11, 96, 0.5),rgba(39, 11,96, 0.5)) ;
+       background-color: transparent;
+}
+
+    .card{
+        width: 60%;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 600px;
+        overflow: hidden;
+        @include mobile{
+            width: 100%;
+            min-height: 100%;
+            border-radius: none;
+            background: none;
+            
+        }
+        @include max-mini{
+            width: 100%;
+            min-height: 100%;
+            border-radius: none;
+            background: none;
+        }
+
+        .left{
+        flex: 1;
+        background:linear-gradient(rgba(39, 11, 96, 0.5),rgba(39, 11,96, 0.5)), url(https://images.pexels.com/photos/4288671/pexels-photo-4288671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center;
+        background-size: cover;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @include mobile{
+            display: none;
+        }
+        @include max-mini{
+            display: none;
+        }
+        color: white;
+            h1{
+                font-size: 100px;
+                line-height: 100px;
+            }
+            p{
+            }
+            span{
+                font-size: 14px;
+            }
+            }
+            button{
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color: rebeccapurple;
+                font-weight: bold;
+                cursor: pointer;
+                @include mobile{
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .right{
+             flex: 1;
+             padding: 50px;
+             display: flex;
+             flex-direction: column;
+             gap: 50px;
+             justify-content: center;
+            h1{
+                color: #555;
+                @include max-mini{
+                    align-self: center;
+                }
+                @include mobile{
+                    color:  white;
+                }
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                @include max-mini{
+                    align-items: center;
+                    justify-content: center;
+                }
+              span{
+                display: none;
+                
+                @include mobile {
+                    display: block;
+                    color: whitesmoke;
+                }
+                @include max-mini {
+                    display: flex;
+                    color: #000;
+                    margin-right: 100px;
+                }
+              }
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+                    @include mobile{
+                        border-radius: 9px;
+                        width: 80%;
+                    }
+                    @include max-mini{
+                        border-radius: 9px;
+                        height: 10px;
+                        width: 300px;
+                        outline: 1px solid lightgray;
+                    }
+                }
+                button{
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    background-color: #938eef;
+                    color: white;
+                    font-weight: bold;
+
+                    @include max-mini{
+                        border-radius: 9px;
+                        width: 320px;
+                    }
+                } 
+            }
+        }
+
+    }
